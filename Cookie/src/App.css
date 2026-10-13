@@ -1,0 +1,106 @@
+
+/* Cookie Clicker Section */
+
+
+
+.Cookie_title
+{
+ 
+  
+  border-radius: 20px;
+  border-width: 3px;
+  border-style: groove;
+  border-color: black;
+
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  background-color: hsl(170, 94%, 88%);
+
+
+  animation: flashColors 0.6s infinite;
+  animation-timing-function: steps(3);
+
+  font-size: 28px;
+  font-family: "Changa One";
+  font-weight: 100;
+  font-style: normal;
+}
+
+@keyframes flashColors
+{
+  0%
+  {
+    color: lab(63.45% 31.54 63.5);
+  }
+
+  25%
+  {
+    color: lab(53.49% 26.3 54.45);
+  }
+
+  50%
+  {
+    color: lab(46.08% 15.63 36.69);
+  }
+
+  75%
+  {
+    color: lch(40.54% 29.38 68.28);
+  }
+
+  100%
+  {
+    color: lch(22.94% 12.78 70.5);
+  }
+
+
+}
+
+.Cookie_img
+{
+display: block;
+margin-left: auto;
+margin-right: auto;
+ /*  margin-left: 45%; */
+
+  width: 65px;
+  height: 65px;
+}
+
+
+
+.Cookie_img:active
+{
+  margin-top: -3px;
+  width: 70px;
+  height: 70px;
+
+  cursor: grabbing;
+}
+
+.Cookie_btn2:hover
+{
+   cursor: grab;
+}
+
+
+.Cookie_btn2
+{
+/*   background: none; */
+  display: flex;
+  justify-content: center;
+
+  border: none;
+  padding: 0;
+  margin-left: 50%;
+  margin-right: 50%;
+
+ 
+}
+
+
+
