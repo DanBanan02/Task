@@ -1,6 +1,23 @@
 
-/* Cookie Clicker Section */
+/* ================================================================== */
+                        /* CORE! */
+/* ================================================================== */
 
+:root
+{
+  background-color:navy;
+}
+
+
+/* ================================================================== */
+                        /* COOKIE CLICKER */
+/* ================================================================== */
+
+.Cookie_Page
+{
+  background-color: #0b8011;
+
+}
 
 
 .Cookie_title
@@ -65,10 +82,15 @@
 display: block;
 margin-left: auto;
 margin-right: auto;
+
  /*  margin-left: 45%; */
+
+ 
 
   width: 65px;
   height: 65px;
+
+  background-color: #0b8011;
 }
 
 
@@ -91,16 +113,54 @@ margin-right: auto;
 .Cookie_btn2
 {
 /*   background: none; */
-  display: flex;
-  justify-content: center;
+  display: block;
+
+  margin-left: auto;
+  margin-right: auto;
 
   border: none;
   padding: 0;
-  margin-left: 50%;
-  margin-right: 50%;
+  background: none;
 
- 
 }
 
+.Cookie_amount
+{
+  color:#a57e2a;
+  font-weight: bold;
+  font-size: 24px;
+  -webkit-text-stroke: 1px black;
+  
+  background-color: yellow;
+  border-radius: 25px;
+  border-width: 7px;
+  border-style: solid;
+  border-color: black;
+  
+  margin-left: 500px;
+  margin-right: 500px;
+  margin-bottom: 10px;
+  
+  padding-left: 12.5px;
+  padding-right: 12.5px;
+  padding-bottom: 4px;
+  padding-top: 4px;
+  
+
+}
+
+
+/* ================================================================== */
+                        /* CAT FACT */
+/* ================================================================== */
+
+
+.Pfact
+{
+  font-family: sans-serif;
+  font-weight: bold;
+  color: #c9c4c4;
+  -webkit-text-stroke: 1px #a57e2a;
+}
 
 

@@ -4,31 +4,49 @@ import cookieImg from "../Image_page/cookie.png"
 function Cookie()
 {
     const [clicks, setClicks] = useState(0)
-
-    const newClicks = clicks +1
-
-    if (newClicks === 100)
-    {
-        console.log("Congrats nerd!")
-        
-    }
+   
 
     return(
         <>
+        <div className="Cookie_Page">
+                <h1 className="Cookie_title">Cookie Clicker</h1>
 
-            <h1 className="Cookie_title">Cookie Clicker</h1>
+                <p className="Cookie_amount">{clicks}x Cookies </p>
 
-            <p className="Cookie_amount">Cookies {clicks}</p>
+                <button
+                    className="Cookie_btn2"
+                    onClick={() => 
+            {
 
-            <button
-                className="Cookie_btn2"
-                onClick={() => {
-                    setClicks(clicks + 1)
-                    console.log("Cookie Clicked:", clicks + 1)}}>
-                
-                <img className="Cookie_img" src={cookieImg} alt="Cookie"/></button>  
+                    const newClicks = clicks + 1
+
+                    setClicks(newClicks)
+
+                    
+                    if (newClicks % 100 === 0)
+                    {
+                        console.log("Congrats, you achieved: " + newClicks + " cookies.")
+                    }
+
+                    
+                    else if (newClicks % 10 === 0)
+                    {
+                        console.log("Congrats, you Achieved: " + newClicks + " cookies.")  
+                    }
+
+                    else
+                    {
+                        console.log("Achieved: " + newClicks + " cookies.")
+                    }
+
+
+            }}>
+                        
+                    
+                    
+                    <img className="Cookie_img" src={cookieImg} alt="Cookie"/></button>  
     
-            
+            </div>
         </>
     )
 }
