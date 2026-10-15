@@ -3,9 +3,97 @@
                         /* CORE! */
 /* ================================================================== */
 
-:root
+html,
+body,
+#root
 {
-  background-color:navy;
+    width: 100%;
+   background-color: #030355;
+
+}
+
+/* ================================================================== */
+                        /* Page Section*/
+/* ================================================================== */
+
+.Home_page
+{
+  background-color: #0707ca;
+/*   min-height: 100vh; */
+}
+
+.Cookie_Page
+{
+  background-image:
+  
+        repeating-linear-gradient(
+            105deg,
+            transparent 0px,
+            transparent 8px,
+            #14951b 9px,
+            transparent 11px
+        ),
+        repeating-linear-gradient(
+            105deg,
+            transparent 0px,
+            transparent 8px,
+            #08700d 11px,
+            transparent 14px
+        ),
+           repeating-linear-gradient(
+            95deg,
+           transparent 0px,
+            transparent 8px,
+            #14951b 9px,
+            transparent 11px
+        );
+
+        
+        
+        
+      background-color: green;
+
+
+  width: 100%;
+  min-height: 60%;
+
+  padding-bottom: 2.5%;
+
+  box-sizing: border-box;
+
+  border-width: 20px;
+  border-style:inset;
+  border-color: black;
+
+  outline-style: solid;
+  outline-width: 20px;
+  outline-color: black;
+
+  border-inline-style: solid;
+  border-inline-width: 20px;
+  border-inline-color: #2c2b2b;
+
+
+
+
+}
+
+
+.Home_btn
+{
+  user-select: none;
+}
+.Cookie_btn
+{
+user-select: none;
+}
+.cat_btn
+{
+  user-select: none;
+}
+.User_btn
+{
+user-select: none;
 }
 
 
@@ -13,17 +101,17 @@
                         /* COOKIE CLICKER */
 /* ================================================================== */
 
-.Cookie_Page
-{
-  background-color: #0b8011;
-
-}
-
 
 .Cookie_title
 {
+  margin-bottom: 12vh;
+}
+
+.Cookie_flash
+{
  
-  
+  user-select: none;
+
   border-radius: 20px;
   border-width: 3px;
   border-style: groove;
@@ -45,6 +133,8 @@
   font-family: "Changa One";
   font-weight: 100;
   font-style: normal;
+
+  width: 175px;
 }
 
 @keyframes flashColors
@@ -79,9 +169,11 @@
 
 .Cookie_img
 {
-display: block;
-margin-left: auto;
-margin-right: auto;
+  
+  
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 
  /*  margin-left: 45%; */
 
@@ -90,7 +182,7 @@ margin-right: auto;
   width: 65px;
   height: 65px;
 
-  background-color: #0b8011;
+  background-color: transparent;
 }
 
 
@@ -107,6 +199,7 @@ margin-right: auto;
 .Cookie_btn2:hover
 {
    cursor: grab;
+   
 }
 
 
@@ -122,10 +215,14 @@ margin-right: auto;
   padding: 0;
   background: none;
 
+  user-select: none;
+
 }
 
 .Cookie_amount
 {
+  user-select: none;
+
   color:#a57e2a;
   font-weight: bold;
   font-size: 24px;
@@ -137,14 +234,16 @@ margin-right: auto;
   border-style: solid;
   border-color: black;
   
-  margin-left: 500px;
-  margin-right: 500px;
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: 10px;
   
   padding-left: 12.5px;
   padding-right: 12.5px;
   padding-bottom: 4px;
   padding-top: 4px;
+
+  width: 150px;
   
 
 }

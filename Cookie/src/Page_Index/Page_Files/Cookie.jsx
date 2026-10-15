@@ -1,51 +1,78 @@
 import { useState } from "react"
 import cookieImg from "../Image_page/cookie.png"
 
-function Cookie()
+function Cookie({ setPage })
 {
     const [clicks, setClicks] = useState(0)
-   
 
     return(
         <>
-        <div className="Cookie_Page">
+            
+            <button
+                    className="Cookie_btn"
+                    onClick={() => setPage("Home")}
+                >
+                    Home
+                </button>
+
                 <h1 className="Cookie_title">Cookie Clicker</h1>
 
-                <p className="Cookie_amount">{clicks}x Cookies </p>
 
-                <button
-                    className="Cookie_btn2"
-                    onClick={() => 
-            {
+            <div className="Cookie_Page">
+                <div>
 
-                    const newClicks = clicks + 1
+                    <h1 className="Cookie_flash">
+                        Cookie Clicker
+                    </h1>
 
-                    setClicks(newClicks)
+                    <p className="Cookie_amount">
+                        {clicks}x Cookies
+                    </p>
+                </div>
+                
+                <div>
+                    <button
+                        className="Cookie_btn2"
+                        onClick={() =>
+                        {
+                            const newClicks = clicks + 1
 
-                    
-                    if (newClicks % 100 === 0)
-                    {
-                        console.log("Congrats, you achieved: " + newClicks + " cookies.")
-                    }
+                            setClicks(newClicks)
 
-                    
-                    else if (newClicks % 10 === 0)
-                    {
-                        console.log("Congrats, you Achieved: " + newClicks + " cookies.")  
-                    }
-
-                    else
-                    {
-                        console.log("Achieved: " + newClicks + " cookies.")
-                    }
-
-
-            }}>
-                        
-                    
-                    
-                    <img className="Cookie_img" src={cookieImg} alt="Cookie"/></button>  
-    
+                            if (newClicks % 100 === 0)
+                            {
+                                console.log(
+                                    "Congrats, you achieved: " +
+                                    newClicks +
+                                    " cookies."
+                                )
+                            }
+                            else if (newClicks % 10 === 0)
+                            {
+                                console.log(
+                                    "Congrats, you Achieved: " +
+                                    newClicks +
+                                    " cookies."
+                                )
+                            }
+                            else
+                            {
+                                console.log(
+                                    "Achieved: " +
+                                    newClicks +
+                                    " cookies."
+                                )
+                            }
+                        }}
+                    >
+                        <img
+                            className="Cookie_img"
+                            draggable="false"
+                            src={cookieImg}
+                            alt="Cookie"
+                        />
+                    </button>
+                </div>
             </div>
         </>
     )

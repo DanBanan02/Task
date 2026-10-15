@@ -1,39 +1,35 @@
 import { useState } from "react"
 
-import './App.css'
+import "./App.css"
 
+import Home from "./Page_Index/Page_Files/Home.jsx"
 import Cookie from "./Page_Index/Page_Files/Cookie.jsx"
 import Catfact from "./Page_Index/Page_Files/Catfact.jsx"
 import User from "./Page_Index/Page_Files/User.jsx"
 
-function App() {
+function App()
+{
+    const [page, setPage] = useState("Home")
 
-  const [page, setPage] = useState("Cookie")
-  return (
-    <>
-       <div><h1>Home page</h1></div>
-       <br></br>
-       <div>
-          <div>
-               <button className="Cookie_btn" onClick={() => setPage("Cookie")}>Cookie Clicker</button>
-          </div>
+    return(
+        <>
+            {page === "Home" && (
+                <Home setPage={setPage} />
+            )}
 
-          <div>
-            <button className="Catfact_btn" onClick={() => setPage("Catfact")}>Facts about cats</button>
-          </div>
+            {page === "Cookie" && (
+                <Cookie setPage={setPage} />
+            )}
 
-          <div>
-             <button className="User_btn" onClick={() => setPage("User")}>User Setup</button>
-          </div>
-          
-        </div>
+            {page === "Catfact" && (
+                <Catfact setPage={setPage} />
+            )}
 
-  {page === "Cookie" && <Cookie />}
-  {page === "Catfact" && <Catfact />}
-  {page === "User" && <User />}
-      
-    </>
-  )
-};
+            {page === "User" && (
+                <User setPage={setPage} />
+            )}
+        </>
+    )
+}
 
-export default App;
+export default App
