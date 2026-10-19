@@ -4,10 +4,11 @@ import cookieImg from "../Image_page/cookie.png"
 function Cookie({ setPage })
 {
     const [clicks, setClicks] = useState(0)
+    const [msg, setMsg] = useState("")
 
     return(
         <>
-            
+
             <button
                     className="Cookie_btn"
                     onClick={() => setPage("Home")}
@@ -29,7 +30,7 @@ function Cookie({ setPage })
                         {clicks}x Cookies
                     </p>
                 </div>
-                
+                            
                 <div>
                     <button
                         className="Cookie_btn2"
@@ -46,15 +47,30 @@ function Cookie({ setPage })
                                     newClicks +
                                     " cookies."
                                 )
+                                setMsg("Congrats, you recived 100x more cookies.")
+                                setTimeout(() => 
+                                {
+                                    setMsg("")
+                                }, 1000)
+
+                                
                             }
+
                             else if (newClicks % 10 === 0)
                             {
                                 console.log(
                                     "Congrats, you Achieved: " +
                                     newClicks +
                                     " cookies."
+                                    
                                 )
+                                setMsg("Congrats, you recived 10x more cookies.")
+                                setTimeout(() => 
+                                {
+                                    setMsg("")
+                                }, 1000)
                             }
+                            
                             else
                             {
                                 console.log(
@@ -64,6 +80,7 @@ function Cookie({ setPage })
                                 )
                             }
                         }}
+                        
                     >
                         <img
                             className="Cookie_img"
@@ -72,6 +89,7 @@ function Cookie({ setPage })
                             alt="Cookie"
                         />
                     </button>
+                    <p className="msg">{msg}</p>
                 </div>
             </div>
         </>

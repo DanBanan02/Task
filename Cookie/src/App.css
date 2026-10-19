@@ -7,9 +7,9 @@ html,
 body,
 #root
 {
-    width: 100%;
-   background-color: #030355;
-
+  width: 100%;
+  background-color: #030355;
+  margin-bottom: -100px;
 }
 
 /* ================================================================== */
@@ -54,10 +54,7 @@ body,
       background-color: green;
 
 
-  width: 100%;
-  min-height: 60%;
 
-  padding-bottom: 2.5%;
 
   box-sizing: border-box;
 
@@ -72,6 +69,15 @@ body,
   border-inline-style: solid;
   border-inline-width: 20px;
   border-inline-color: #2c2b2b;
+
+width: 500px;
+aspect-ratio: 1 / 1;
+
+margin-left: auto;
+margin-right: auto;
+margin-top: 50px;
+margin-bottom: 100px;
+
 
 
 
@@ -238,14 +244,27 @@ user-select: none;
   margin-right: auto;
   margin-bottom: 10px;
   
-  padding-left: 12.5px;
-  padding-right: 12.5px;
+  padding-left: 18px;
+  padding-right: 18px;
   padding-bottom: 4px;
   padding-top: 4px;
 
   width: 150px;
   
 
+}
+
+.msg
+{
+  color: hwb(60 17% 9%);
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+    min-height: 24px;
+
+    margin-top: 10px;
+    margin-bottom: 0;
+
+    text-align: center;
 }
 
 
@@ -260,6 +279,20 @@ user-select: none;
   font-weight: bold;
   color: #c9c4c4;
   -webkit-text-stroke: 1px #a57e2a;
+}
+
+
+/* ================================================================== */
+                        /* USER */
+/* ================================================================== */
+
+.user_text
+{
+  color:#14951b;
+  font-weight: bold;
+  -webkit-text-stroke: #2c2b2b;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-size-adjust: auto;
 }
 
 
