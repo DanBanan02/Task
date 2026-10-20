@@ -1,7 +1,9 @@
 import { useEffect, useState } from "react"
 
+/* CatFact Page Functions */
 function Catfact({ setPage })
 {
+
     const [fact, setFact] = useState([])
     const [factIndex, setFactIndex] = useState(0)
 
@@ -36,9 +38,12 @@ function Catfact({ setPage })
                 Home
             </button>
 
+            {/* Main Title of the page */}
             <h1 className="Catfact_title">
                 Facts about Cats
             </h1>
+
+            {/* Function that lets you see the previous Fact about cats */}
         <div className="Fact_btn">
             <button className="Prev_btn"
                 onClick={() =>
@@ -51,6 +56,7 @@ function Catfact({ setPage })
                 Previous
             </button>
 
+            {/* Function that let you see the next Fact about cats */}
             <button className="Next_btn"
                 onClick={() =>
                 {

@@ -67,7 +67,9 @@ function User({ setPage })
                     type="text"
                     placeholder="Name to remove"
                     value={removeName}
-                    onChange={(event) => setRemoveName(event.target.value)}/>
+                    onChange={(event) => 
+                    
+                    setRemoveName(event.target.value)}/>
                     
                     <button
                         onClick={() =>
