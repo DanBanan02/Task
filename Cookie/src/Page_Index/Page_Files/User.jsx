@@ -22,7 +22,7 @@ function User({ setPage })
     return(
         <>
             <button
-                className="User_btn"
+                className="User_btn_Home"
                 onClick={() => setPage("Home")}
             >
                 Home

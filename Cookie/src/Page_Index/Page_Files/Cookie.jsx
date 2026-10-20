@@ -10,7 +10,7 @@ function Cookie({ setPage })
         <>
 
             <button
-                    className="Cookie_btn"
+                    className="Cookie_btn_Home"
                     onClick={() => setPage("Home")}
                 >
                     Home
@@ -47,11 +47,11 @@ function Cookie({ setPage })
                                     newClicks +
                                     " cookies."
                                 )
-                                setMsg("Congrats, you recived 100x more cookies.")
+                                setMsg("Congrats, you made 100x more cookies.")
                                 setTimeout(() => 
                                 {
                                     setMsg("")
-                                }, 1000)
+                                }, 1500)
 
                                 
                             }
@@ -64,11 +64,11 @@ function Cookie({ setPage })
                                     " cookies."
                                     
                                 )
-                                setMsg("Congrats, you recived 10x more cookies.")
+                                setMsg("Congrats, you made 10x more cookies.")
                                 setTimeout(() => 
                                 {
                                     setMsg("")
-                                }, 1000)
+                                }, 1500)
                             }
                             
                             else

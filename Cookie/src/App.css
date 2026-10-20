@@ -102,6 +102,149 @@ user-select: none;
 user-select: none;
 }
 
+/* ================================================================== */
+                        /* Nav Buttons */
+/* ================================================================== */
+
+/* Main Page Buttons */
+
+
+/* Div for Buttons */
+.Home_Buttons
+{
+  display:flex;
+  gap: 5px;
+  justify-content: center;
+  align-items: center;
+
+  margin-top: 4px;
+}
+
+
+.Cookie_btn
+{
+  border-radius: 12px;
+  border-width: 1px;
+  border-style: solid;
+
+  font-size: 14px;
+  
+
+  padding: 4px;
+  background-color:#fece8f;
+
+/*    margin-top: 10px; */
+  
+  
+}
+
+
+.Cookie_btn:hover
+{
+  
+  background: hsl(53, 75%, 51%);
+  
+}
+
+
+
+.Catfact_btn
+{
+  border-radius: 12px;
+  padding: 4px;
+  font-size: 14px;
+}
+.User_btn
+{
+  border-radius: 12px;
+  padding: 4px;
+  font-size: 14px;
+}
+
+/* From page to Home page Buttons */
+
+.Cookie_btn_Home
+{
+  border-radius: 12px;
+}
+
+.Cat_btn_Home
+{
+  border-radius: 12px;
+}
+
+.User_btn_Home
+{
+  border-radius: 12px;
+}
+
+
+/* ================================================================== */
+                        /* Home Page */
+/* ================================================================== */
+
+
+
+.Home_page
+{
+  border-radius: 14px;
+  border-width: 7.5px;
+  border-style: solid;
+  border-color: black;
+
+  border-inline-start: #030355;
+  border-inline-style: solid;
+
+  border-inline: 2px;
+  border-inline-color: red;
+  border-inline-width: 4px;
+
+
+}
+
+
+.Home_div
+{
+  display:flex;
+
+}
+.Home_title
+{
+  color: red;
+  font-style: italic;
+  -webkit-text-stroke-width: 3px;
+  -webkit-text-stroke-color: lab(51.89% 76.01 59.3);
+  -webkit-text-fill-color: hwb(228 16% 40%);
+}
+
+.Home_p
+{
+  color: #bff66c;
+ -webkit-text-stroke-color: #00ff11;
+ -webkit-text-stroke-width: 0.3px;
+
+ 
+}
+.Home_p_li
+{
+  color: #bff66c;
+ -webkit-text-stroke-color: #00ff11;
+ -webkit-text-stroke-width: 0.3px;
+  left: -10px;
+  position: relative;
+
+}
+
+.Monkey_img
+{
+  width: 160px;
+  height: 240px;
+  border-radius: 24px;
+  border-width: 4px;
+  border-style: solid;
+  border-color: black;
+}
+
 
 /* ================================================================== */
                         /* COOKIE CLICKER */

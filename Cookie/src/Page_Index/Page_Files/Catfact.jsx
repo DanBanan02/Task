@@ -32,7 +32,7 @@ function Catfact({ setPage })
     return(
         <>
             <button
-                className="Cat_btn"
+                className="Cat_btn_Home"
                 onClick={() => setPage("Home")}
             >
                 Home
