@@ -12,6 +12,20 @@ body,
   margin-bottom: -100px;
 }
 
+.Hint
+{
+  position: fixed;
+  user-select: none;
+}
+
+.Hint_btn
+{
+  position:fixed;
+
+  margin-top: -30px;
+  user-select: none;
+}
+
 /* ================================================================== */
                         /* Page Section*/
 /* ================================================================== */
@@ -78,11 +92,9 @@ margin-right: auto;
 margin-top: 50px;
 margin-bottom: 100px;
 
-
-
-
-
 }
+
+
 
 
 .Home_btn
@@ -123,18 +135,22 @@ user-select: none;
 
 .Cookie_btn
 {
-  border-radius: 12px;
-  border-width: 1px;
-  border-style: solid;
-
-  font-size: 14px;
-  
-
-  padding: 4px;
-  background-color:#fece8f;
+  background-color: red;
+  border: none;
+  color: white;
+  padding: 6px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 14px;
 
 /*    margin-top: 10px; */
-  
+  border-radius: 14px;
+  border-width: 4px;
+  border-style:outset;
+  border-color: black;
   
 }
 
@@ -142,40 +158,223 @@ user-select: none;
 .Cookie_btn:hover
 {
   
-  background: hsl(53, 75%, 51%);
+  background-color: hwb(0 8% 43%);
+  border: none;
+  color: white;
+  padding: 6px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
   
+  border-radius: 14px;
+  border-width: 4px;
+  border-style: solid;
+  
+  border-color: black;
+
+  
+  
+}
+
+.Cookie_btn:active
+{
+  border-style:inset;
 }
 
 
 
 .Catfact_btn
 {
-  border-radius: 12px;
-  padding: 4px;
-  font-size: 14px;
+    background-color: oklab(83.26599999999999% -0.09162 0.16582);
+  border: none;
+  color: white;
+  padding: 6px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 14px;
+
+/*    margin-top: 10px; */
+  border-radius: 14px;
+  border-width: 4px;
+  border-style:outset;
+  border-color: black;
 }
+
+.Catfact_btn:hover
+{
+  background-color: oklch(59.737% 0.1271 118.103);
+  border: none;
+  color: white;
+  padding: 6px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  
+  border-radius: 14px;
+  border-width: 4px;
+  border-style: solid;
+  
+  border-color: black;
+}
+
+.Catfact_btn:active
+{
+  border-style:inset;
+}
+
+
 .User_btn
 {
-  border-radius: 12px;
-  padding: 4px;
-  font-size: 14px;
+  background-color: oklch(75.998% 0.12908 194.818);
+  border: none;
+  color: white;
+  padding: 6px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 14px;
+
+/*    margin-top: 10px; */
+  border-radius: 14px;
+  border-width: 4px;
+  border-style:outset;
+  border-color: black;
 }
+
+.User_btn:hover
+{
+  background-color: rgb(6, 151, 151);
+  border: none;
+  color: white;
+  padding: 6px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  
+  border-radius: 14px;
+  border-width: 4px;
+  border-style: solid;
+  
+  border-color: black;
+}
+
+.User_btn:active
+{
+  border-style:inset;
+}
+
 
 /* From page to Home page Buttons */
 
+
+/* Cookie Home Button */
+
 .Cookie_btn_Home
 {
+  margin-top: 6px;
   border-radius: 12px;
+  margin-left: 25rem;
+  margin-right: 25rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+
+  font-size: 32px;
+  font-weight: bolder;
+
+  background: linear-gradient(to right, red, blue);
+
+  border-radius: 12.5px;
+  border-width: 6px;
+  border-style: outset;
 }
+
+.Cookie_btn_Home:hover
+{
+  border-style: solid;
+  border-color: black;
+  background: linear-gradient(to right, hsl(0, 74%, 37%), hsl(240, 75%, 39%));
+}
+
+.Cookie_btn_Home:active
+{
+  border-style: inset;
+}
+
+/* Cat Home Button */
 
 .Cat_btn_Home
 {
+    margin-top: 6px;
   border-radius: 12px;
+  margin-left: 25rem;
+  margin-right: 25rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+
+  font-size: 32px;
+  font-weight: bolder;
+
+  background: linear-gradient(to right, red, blue);
+
+  border-radius: 12.5px;
+  border-width: 6px;
+  border-style: outset;
 }
+
+.Cat_btn_Home:hover
+{
+  border-style: solid;
+  border-color: black;
+  background: linear-gradient(to right, hsl(0, 74%, 37%), hsl(240, 75%, 39%));
+}
+
+.Cat_btn_Home:active
+{
+  border-style: inset;
+}
+
+/* User Home Button */
 
 .User_btn_Home
 {
+    margin-top: 6px;
   border-radius: 12px;
+  margin-left: 25rem;
+  margin-right: 25rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+
+  font-size: 32px;
+  font-weight: bolder;
+
+  background: linear-gradient(to right, red, blue);
+
+  border-radius: 12.5px;
+  border-width: 6px;
+  border-style: outset;
+}
+
+.User_btn_Home:hover
+{
+  border-style: solid;
+  border-color: black;
+  background: linear-gradient(to right, hsl(0, 74%, 37%), hsl(240, 75%, 39%));
+}
+
+.User_btn_Home:active
+{
+  border-style: inset;
 }
 
 
@@ -200,6 +399,7 @@ user-select: none;
   border-inline-width: 4px;
 
 
+
 }
 
 
@@ -215,14 +415,26 @@ user-select: none;
   -webkit-text-stroke-width: 3px;
   -webkit-text-stroke-color: lab(51.89% 76.01 59.3);
   -webkit-text-fill-color: hwb(228 16% 40%);
+
+  display:flex;
+  justify-content: center;
 }
 
 .Home_p
 {
-  color: #bff66c;
- -webkit-text-stroke-color: #00ff11;
- -webkit-text-stroke-width: 0.3px;
+color: #bff66c;
+-webkit-text-stroke-color: #00ff11;
+-webkit-text-stroke-width: 0.3px;
+font-size: 13px;
+padding-left: 5px;
 
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  justify-content: flex-start;
+  align-items: stretch;
+  gap: 0px;
+
+  margin-top: -100px;
  
 }
 .Home_p_li
@@ -230,19 +442,37 @@ user-select: none;
   color: #bff66c;
  -webkit-text-stroke-color: #00ff11;
  -webkit-text-stroke-width: 0.3px;
-  left: -10px;
-  position: relative;
+ /*  left: -80px; */
+  /* position: relative; */
+  /* text-align: center; */
+  list-style-position: inside;
+  display:flex;
+  align-items: start;
+  gap: 0px;
+  flex-direction: column;
+  padding-left: 10px;
 
+
+  margin-top: 120px;
 }
 
 .Monkey_img
 {
-  width: 160px;
-  height: 240px;
+  width: 320px;
+  height: 360px;
   border-radius: 24px;
   border-width: 4px;
   border-style: solid;
   border-color: black;
+
+display:grid;
+margin-left: 18rem;
+z-index: 2;
+
+margin-bottom: 4px;
+
+
+ 
 }
 
 
@@ -254,6 +484,27 @@ user-select: none;
 .Cookie_title
 {
   margin-bottom: 12vh;
+
+  background: linear-gradient(15deg, purple, #e97c8e, #f2f246);
+  color: #1a1616;
+  padding: 6px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 22px;
+  border-radius: 14px;
+  font-weight: bold;
+
+  border-width: 6px;
+  border-style:solid ;
+
+  margin-left: 50vh ;
+  margin-right: 50vh ;
+
+  padding-top: 12px;
+  padding-bottom: 12px;
+
+  user-select: none;
 }
 
 .Cookie_flash
@@ -416,26 +667,92 @@ user-select: none;
 /* ================================================================== */
 
 
+.Catfact_title
+{
+  -webkit-text-stroke: goldenrod;
+  -webkit-text-stroke-width: 2px;
+  font-weight: bolder;
+  font-size: 45px;
+}
+
 .Pfact
 {
   font-family: sans-serif;
   font-weight: bold;
-  color: #c9c4c4;
-  -webkit-text-stroke: 1px #a57e2a;
+  color: hwb(0 0% 100%);
+  -webkit-text-stroke: 0.7px lch(57.85% 79.5 136.97);
+
+  border-width: 3px;
+  border-style: solid;
+
+  max-width: 180px;
+  max-height: fit-content;
+  
+  border-radius: 10px;
+  margin-top: 5px;
+  margin-left: 30.5rem;
+
+  background-color:hsl(0, 3%, 28%);
+
+  -webkit-box-shadow: 10px 10px 10px 2px rgba(116,255,27,0.53); 
+box-shadow: 10px 10px 10px 2px rgba(116,255,27,0.53);
+
+
 }
+
+.Prev_btn
+{
+  border-radius: 10px;
+  padding-left: 6.1px;
+  padding-right: 6.1px;
+}
+
+.Next_btn
+{
+  border-radius: 10px;
+  padding-left: 18.3px;
+  padding-right: 18.3px;
+}
+
+div#root
+{
+  background: linear-gradient(145deg, darkred, darkorange, black, blue, white)
+}
+
+
 
 
 /* ================================================================== */
                         /* USER */
 /* ================================================================== */
 
+.User_title
+{
+  color: #4848a5;
+  -webkit-text-stroke: black;
+  -webkit-text-stroke-width: 2.3px;
+  font-weight: bolder;
+}
+
 .user_text
 {
-  color:#14951b;
+  color:hsl(123, 38%, 39%);
   font-weight: bold;
   -webkit-text-stroke: #2c2b2b;
   -webkit-text-stroke-width: 1px;
   -webkit-text-size-adjust: auto;
 }
 
+.li_User
+{
+  border-radius: 8px;
+  border-width: 4px;
+  border-style: solid;
+  border-color: black;
+
+  background-color: hwb(84 59% 0%);
+
+  margin-left: 23rem;
+  margin-right:23rem;
+}
 

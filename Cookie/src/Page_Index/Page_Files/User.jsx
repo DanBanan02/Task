@@ -14,7 +14,7 @@ function User({ setPage })
     ])
 
     const listItems = mockData.map((person) => (
-        <li key={person.email}>
+        <li className="li_User" key={person.email}>
             {person.username} - {person.email}
         </li>
     ))

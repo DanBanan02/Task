@@ -34,17 +34,15 @@ function Home({ setPage })
 
                 <aside>
                     <p className="Home_p">
-                    Navigate trough the page, by clicking on one of the buttons on top of the page.
+                    <span>
+                        <details className="Hint"><summary className="Hint_btn">Hint</summary>Click a button to navigate to a page, with the coresponding function.</details>
+                    </span>
                     </p>
 
-                    <p className="Home_p">
-                    does buttons will lead you to a "Cookie clicker", "Facts about cats" or "add or remove user setup"
-                    </p>
-                
                     <ul className="Home_p_li">
-                        <li className="Home_li_1">Cookie Clicker</li>
-                        <li className="Home_li_2">Cat facts</li>
-                        <li className="Home_li_3">User </li>
+                        <li className="Home_li_1"> <span>Cookie Clicker</span></li>
+                        <li className="Home_li_2"> <span>Cat facts</span> </li>
+                        <li className="Home_li_3"> <span> User </span> </li>
                     </ul>
                 </aside>
                 <div>
