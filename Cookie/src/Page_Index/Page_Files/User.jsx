@@ -15,7 +15,7 @@ function User({ setPage })
 
     const listItems = mockData.map((person) => (
         <li className="li_User" key={person.email}>
-            {person.username} - {person.email}
+            {"Name: " + person.username} <br></br> {"Email: "+ person.email}
         </li>
     ))
 
@@ -34,6 +34,7 @@ function User({ setPage })
             <div>
                 <div>
                     <input
+                        className="input_Name"
                         type="text"
                         placeholder="Enter name"
                         value={username}
@@ -43,6 +44,7 @@ function User({ setPage })
 
                 <div>
                     <input
+                        className="input_Email"
                         type="text"
                         placeholder="Enter Email"
                         value={email}
@@ -50,7 +52,9 @@ function User({ setPage })
                     />
                 </div>
                 <div>
-                    <button onClick={() => {setMockData([...mockData,
+                    <button
+                        className="userAdd_btn"
+                        onClick={() => {setMockData([...mockData,
                                 {
                                     username: username,
                                     email: email
@@ -64,6 +68,7 @@ function User({ setPage })
                 <br></br>
                 <div>
                     <input
+                    className="input_Remove"
                     type="text"
                     placeholder="Name to remove"
                     value={removeName}
@@ -72,6 +77,7 @@ function User({ setPage })
                     setRemoveName(event.target.value)}/>
                     
                     <button
+                        className="userRemove_btn"
                         onClick={() =>
                         { setMockData( mockData.filter((person) => person.username !== removeName ))
 

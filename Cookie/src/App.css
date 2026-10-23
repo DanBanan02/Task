@@ -16,7 +16,25 @@ body,
 {
   position: fixed;
   user-select: none;
+
+
+
+  padding-left: 4px;
+  padding-right: 4px;
 }
+
+details.Hint[open]
+{
+  box-sizing: border-box;
+  border-radius: 12px;
+  border-width: 5px;
+  border-style: solid;
+  background-color: #358383;
+
+  margin-top: -4px;
+  margin-left: -4px;
+}
+
 
 .Hint_btn
 {
@@ -24,6 +42,8 @@ body,
 
   margin-top: -30px;
   user-select: none;
+
+
 }
 
 /* ================================================================== */
@@ -187,7 +207,7 @@ user-select: none;
 
 .Catfact_btn
 {
-    background-color: oklab(83.26599999999999% -0.09162 0.16582);
+  background-color: oklab(83.26599999999999% -0.09162 0.16582);
   border: none;
   color: white;
   padding: 6px 15px;
@@ -203,6 +223,8 @@ user-select: none;
   border-width: 4px;
   border-style:outset;
   border-color: black;
+
+  user-select: none;
 }
 
 .Catfact_btn:hover
@@ -677,25 +699,29 @@ margin-bottom: 4px;
 
 .Pfact
 {
-  font-family: sans-serif;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-weight: bold;
+  font-size: 24px;
   color: hwb(0 0% 100%);
-  -webkit-text-stroke: 0.7px lch(57.85% 79.5 136.97);
+  -webkit-text-stroke: 0.5px oklch(84.606% 0.17239 112.482);
 
-  border-width: 3px;
+  border-width: 5px;
   border-style: solid;
 
-  max-width: 180px;
+  max-width: 360px;
   max-height: fit-content;
   
   border-radius: 10px;
   margin-top: 5px;
-  margin-left: 30.5rem;
+  margin-left: 26rem;
 
-  background-color:hsl(0, 3%, 28%);
+  background-color:lch(92.35% 44 109.23);
 
   -webkit-box-shadow: 10px 10px 10px 2px rgba(116,255,27,0.53); 
-box-shadow: 10px 10px 10px 2px rgba(116,255,27,0.53);
+  box-shadow: 10px 10px 10px 2px rgba(116,255,27,0.53);
+
+  padding: 6px;
+
 
 
 }
@@ -754,5 +780,151 @@ div#root
 
   margin-left: 23rem;
   margin-right:23rem;
+
+  margin-top: 6px;
+
+  
 }
+
+
+.Home_li_1
+{
+    list-style: none;
+    position: relative;
+    padding-left: 20px;
+}
+
+.Home_li_1::before
+{
+    content: "";
+
+    position: absolute;
+    left: 0;
+    top: 50%;
+
+    width: 8px;
+    height: 8px;
+
+    background-color: hsl(10, 88%, 62%);
+
+    border: 2px solid black;
+    border-radius: 50%;
+
+    transform: translateY(-50%);
+}
+
+
+.Home_li_2
+{
+    list-style: none;
+    position: relative;
+    padding-left: 20px;
+}
+
+.Home_li_2::before
+{
+    content: "";
+
+    position: absolute;
+    left: 0;
+    top: 50%;
+
+    width: 8px;
+    height: 8px;
+
+    background-color: hwb(133 42% 7%);
+
+    border: 2px solid black;
+    border-radius: 50%;
+
+    transform: translateY(-50%);
+}
+
+.Home_li_3
+{
+    list-style: none;
+    position: relative;
+    padding-left: 20px;
+}
+
+.Home_li_3::before
+{
+    content: "";
+
+    position: absolute;
+    left: 0;
+    top: 50%;
+
+    width: 8px;
+    height: 8px;
+
+    background-color: hsl(194, 71%, 70%);
+
+    border: 2px solid black;
+    border-radius: 50%;
+
+    transform: translateY(-50%);
+}
+
+
+.userAdd_btn
+{
+  background-color: lch(85.5% 92.67 138.15);
+  border-radius: 8px;
+  border-width: 4px;
+  border-style: outset;
+  border-color: hsl(133, 93%, 17%);
+
+  margin-top: 8px;
+}
+
+.userAdd_btn:active
+{
+  border-style: inset;
+}
+
+.input_Remove
+{
+  background: hwb(0 78% 0%);
+  border-radius: 12px;
+  padding-left: 8px;
+  padding-right: 8px;
+  border-width: 4px;
+  border-style: inset;
+  border-color: #960101;
+}
+
+.input_Name
+{
+  border-radius: 6px;
+  background-color:hsl(60, 76%, 82%);
+  border-style:double;
+  border-width: 4px;
+}
+
+.input_Email
+{
+  border-radius: 6px;
+  background-color:hsl(60, 76%, 82%);
+  border-style:double;
+  border-width: 4px;
+}
+
+.userRemove_btn
+{
+  background-color: rgb(233, 103, 103);
+  border-radius: 8px;
+  border-width: 4px;
+  border-style: outset;
+  border-color: hwb(0 1% 67%);
+  
+  margin-left: 8px;
+}
+
+.userRemove_btn:active
+{
+  border-style: inset;
+}
+
+
 
